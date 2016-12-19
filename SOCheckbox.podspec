@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SOCheckbox"
-  s.version          = "1.0.1"
+  s.version          = "2.0.1"
   s.summary          = "Simple checkbox implementation for iOS written in Swift."
 
 # This description is used to generate tags and improve search results.
@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
   						Can be used with Interface Builder.
                        DESC
 
-  s.homepage         = "https://github.com/SebastianOsinski/SOCheckbox"
+  s.homepage         = "https://github.com/juanbus/SOCheckbox"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Sebastian Osiński" => "seb.osinski@gmail.com" }
-  s.source           = { :git => "https://github.com/SebastianOsinski/SOCheckbox.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/juanbus/SOCheckbox.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
