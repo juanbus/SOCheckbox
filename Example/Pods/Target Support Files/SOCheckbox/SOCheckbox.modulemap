@@ -1,0 +1,6 @@
+framework module SOCheckbox {
+  umbrella header "SOCheckbox-umbrella.h"
+
+  export *
+  module * { export * }
+}

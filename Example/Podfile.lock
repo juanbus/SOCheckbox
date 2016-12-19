@@ -1,0 +1,14 @@
+PODS:
+  - SOCheckbox (0.1.0)
+
+DEPENDENCIES:
+  - SOCheckbox (from `../`)
+
+EXTERNAL SOURCES:
+  SOCheckbox:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SOCheckbox: cd2612d80e58d4a610dbd0b88d7f44cf016489ba
+
+COCOAPODS: 0.39.0

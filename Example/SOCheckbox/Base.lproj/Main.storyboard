@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SOCheckbox_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuF-GX-NiM" customClass="SOCheckbox" customModule="SOCheckbox">
+                                <rect key="frame" x="408" y="285" width="30" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tuF-GX-NiM" secondAttribute="height" multiplier="1:1" id="q4n-Va-1PL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="checkedColor">
+                                        <color key="value" red="0.2470588235" green="0.56470588239999997" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkboxClicked:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hTs-hM-p6R"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgN-0d-EHE" customClass="SOCheckbox" customModule="SOCheckbox">
+                                <rect key="frame" x="180" y="29" width="240" height="240"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rgN-0d-EHE" secondAttribute="height" multiplier="1:1" id="fXX-hA-ZSc"/>
+                                    <constraint firstAttribute="width" constant="240" id="gIc-D1-Omi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xe-8G-ZKu">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ibN-sv-VsL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="WvJ-Hk-rnz">
+                                <rect key="frame" x="200" y="323" width="200" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Fill"/>
+                                    <segment title="Tick"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectStyle:" destination="vXZ-lx-hvc" eventType="valueChanged" id="T5V-zU-JSx"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="top" secondItem="rgN-0d-EHE" secondAttribute="bottom" constant="16" id="0om-dM-gfW"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="top" secondItem="rgN-0d-EHE" secondAttribute="bottom" constant="21" id="78q-S7-ydQ"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="1:3" id="8ID-s0-0Xm"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9Pq-nP-6Qo"/>
+                            <constraint firstItem="WvJ-Hk-rnz" firstAttribute="leading" secondItem="6Xe-8G-ZKu" secondAttribute="leading" id="BUI-vU-K4G"/>
+                            <constraint firstItem="tuF-GX-NiM" firstAttribute="height" secondItem="6Xe-8G-ZKu" secondAttribute="height" id="BgI-8y-i2M"/>
+                            <constraint firstItem="rgN-0d-EHE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KgD-H2-bue"/>
+                            <constraint firstItem="tuF-GX-NiM" firstAttribute="centerY" secondItem="6Xe-8G-ZKu" secondAttribute="centerY" id="M7M-cd-BRG"/>
+                            <constraint firstItem="tuF-GX-NiM" firstAttribute="height" secondItem="6Xe-8G-ZKu" secondAttribute="height" id="PTc-Oi-TZC"/>
+                            <constraint firstItem="tuF-GX-NiM" firstAttribute="centerY" secondItem="6Xe-8G-ZKu" secondAttribute="centerY" id="TQa-Z2-KuX"/>
+                            <constraint firstItem="tuF-GX-NiM" firstAttribute="leading" secondItem="6Xe-8G-ZKu" secondAttribute="trailing" constant="8" id="YBa-gX-MDI"/>
+                            <constraint firstItem="WvJ-Hk-rnz" firstAttribute="trailing" secondItem="6Xe-8G-ZKu" secondAttribute="trailing" id="a3P-rW-CLN"/>
+                            <constraint firstItem="WvJ-Hk-rnz" firstAttribute="top" secondItem="6Xe-8G-ZKu" secondAttribute="bottom" constant="13" id="cnS-FE-U8A"/>
+                            <constraint firstItem="WvJ-Hk-rnz" firstAttribute="top" secondItem="6Xe-8G-ZKu" secondAttribute="bottom" constant="8" id="fon-fD-LqN"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="trailing" secondItem="WvJ-Hk-rnz" secondAttribute="trailing" id="imf-N5-PDw"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="p1Y-dm-vcl"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="srn-5g-mr4"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="1:3" id="t5Z-aR-ZQE"/>
+                            <constraint firstItem="6Xe-8G-ZKu" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="xW8-WT-8b5"/>
+                            <constraint firstItem="tuF-GX-NiM" firstAttribute="leading" secondItem="6Xe-8G-ZKu" secondAttribute="trailing" constant="8" id="zti-72-TSB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="78q-S7-ydQ"/>
+                                <exclude reference="imf-N5-PDw"/>
+                                <exclude reference="p1Y-dm-vcl"/>
+                                <exclude reference="srn-5g-mr4"/>
+                                <exclude reference="t5Z-aR-ZQE"/>
+                                <exclude reference="cnS-FE-U8A"/>
+                                <exclude reference="BgI-8y-i2M"/>
+                                <exclude reference="M7M-cd-BRG"/>
+                                <exclude reference="YBa-gX-MDI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="checkbox" destination="tuF-GX-NiM" id="aLg-W1-Szv"/>
+                        <outlet property="label" destination="6Xe-8G-ZKu" id="BQ5-gS-Uba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="360"/>
+        </scene>
+    </scenes>
+</document>

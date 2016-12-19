@@ -1,0 +1,25 @@
+{
+  "name": "SOCheckbox",
+  "version": "0.1.0",
+  "summary": "A short description of SOCheckbox.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SOCheckbox",
+  "license": "MIT",
+  "authors": {
+    "Sebastian Osiński": "seb.osinski@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SOCheckbox.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SOCheckbox": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
